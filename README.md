@@ -2,6 +2,10 @@
 
 Java 17 online bookstore demo with an HTML/CSS/JavaScript frontend and six design patterns.
 
+## Open the local website
+
+Start the project from IntelliJ IDEA, then open [Qalam Online Bookstore](http://localhost:8080). This address works on the same computer while the Java server is running; it is not a public internet link.
+
 ## Run in IntelliJ IDEA
 
 1. Open this project in IntelliJ IDEA and select JDK 17 or newer.
