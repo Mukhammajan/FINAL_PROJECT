@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="kk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5f0">
+  <meta name="description" content="Qalam — әр оқырманға арналған кітап дүкені.">
+  <title>Qalam — кітап дүкені</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="announcement" id="announcement">Оқуға арналған жаңа әлем — <strong>әр тапсырысқа 10% жеңілдік</strong></div>
+  <header class="site-header">
+    <a class="brand" id="brand-home" href="#home" aria-label="Qalam басты бет">
+      <span class="brand-mark">q.</span><span>qalam<span class="brand-period">.</span><small id="brand-label">КІТАП ДҮКЕНІ</small></span>
+    </a>
+    <nav class="main-nav" id="main-nav" aria-label="Негізгі мәзір">
+      <a id="nav-catalog" href="#catalog">Каталог</a><a id="nav-about" href="#about">Біз туралы</a>
+    </nav>
+    <button class="cart-trigger" id="open-cart" type="button" aria-label="Себетті ашу">
+      <span class="bag-icon" aria-hidden="true">▱</span><span id="cart-label">Себет</span><span class="cart-count" id="cart-count">0</span>
+    </button>
+    <div class="language-switch" id="language-switch" role="group" aria-label="Тілді таңдау">
+      <button type="button" data-lang="kk" class="active" aria-label="Қазақша">ҚАЗ</button>
+      <button type="button" data-lang="ru" aria-label="Русский">РУС</button>
+      <button type="button" data-lang="en" aria-label="English">ENG</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="eyebrow-dot"></span><span id="hero-eyebrow">СІЗДІҢ КЕЛЕСІ СҮЙІКТІ КІТАБЫҢЫЗ</span></span>
+        <h1 id="hero-title">Әр кітап —<br>жаңа <em>әлем.</em></h1>
+        <p id="hero-description">Жүрекке жақын оқиғалар, пайдалы білім және шабыт сыйлайтын кітаптар бір жерде.</p>
+        <a class="button button-dark" href="#catalog"><span id="hero-button-label">Кітаптарды көру</span><span aria-hidden="true">↗</span></a>
+        <div class="hero-note"><span class="avatar-stack"><i id="reader-initial-1">О</i><i id="reader-initial-2">А</i><i id="reader-initial-3">М</i></span><span id="hero-note">Оқырмандар таңдаған кітаптар</span></div>
+      </div>
+      <div class="hero-art" id="hero-art" aria-label="Кітаптар мен гүл бейнеленген иллюстрация">
+        <div class="art-sun"></div><div class="art-caption" id="art-caption">SLOW<br>DOWN &<br>READ MORE</div>
+        <div class="book book-back"><span>THE ART OF<br>NOTICING</span><small>ROB WALKER</small></div>
+        <div class="book book-middle"><span>THE<br>CREATIVE<br>ACT</span><small>RICK RUBIN</small></div>
+        <div class="book book-front"><span id="art-book-title">ӘР БЕТТЕ<br>ЖАҢА ӘЛЕМ</span><small id="art-book-name">ҚАЛАМ</small></div>
+        <div class="hero-flower">✳</div><div class="art-sticker" id="art-sticker">оқы.<br>арманда.</div>
+      </div>
+      <div class="hero-bottom"><span>01 — 26</span><span id="hero-bottom-label">ТАҢДАУЛЫ КІТАПТАР</span><span>↓</span></div>
+    </section>
+
+    <section class="catalog section-wrap" id="catalog">
+      <div class="section-heading">
+        <div><span class="eyebrow" id="catalog-eyebrow">QALAM КАТАЛОГЫ</span><h2 id="catalog-title">Жақсы кітап<br><em>әрдайым табылады.</em></h2></div>
+        <p id="catalog-description">Білім, шабыт немесе бір кешке арналған оқиға — өзіңізге лайық кітапты таңдаңыз.</p>
+      </div>
+      <div class="catalog-toolbar">
+        <div class="category-list" id="categories" aria-label="Кітап санаттары"></div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Кітапты іздеу..." aria-label="Кітапты іздеу"></label>
+      </div>
+      <div class="catalog-layout">
+        <div class="book-grid" id="book-grid" aria-live="polite"><div class="loading-state">Кітаптар жүктелуде…</div></div>
+        <aside class="side-note"><span class="side-star">✳</span><p id="side-note-label">Кішкентай кеңес</p><strong id="side-note-title">Кітапты<br>асықпай<br>таңдаңыз.</strong><span class="side-note-bottom" id="side-note-bottom">ӘР ОҚЫРМАНҒА — ӨЗ ОҚИҒАСЫ</span></aside>
+      </div>
+    </section>
+
+    <section class="promise" id="about">
+      <div class="promise-mark">q.</div><div><span class="eyebrow" id="promise-eyebrow">БІЗДІҢ КІШКЕНТАЙ УӘДЕМІЗ</span><h2 id="promise-title">Кітап таңдауды<br><em>жеңіл етеміз.</em></h2></div>
+      <p id="promise-description">Іздеп жүріп тапқан кітабыңыз, жылдам тапсырыс, мұқият орау. Qalam — жақсы оқуға бір қадам жақын.</p>
+      <div class="promise-badges"><span id="promise-badge-1">✦ Мұқият таңдалған</span><span id="promise-badge-2">↗ Қауіпсіз тапсырыс</span><span id="promise-badge-3">♡ Сыйлыққа дайын</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">q.</span><span>qalam<span class="brand-period">.</span><small class="brand-label">КІТАП ДҮКЕНІ</small></span></a><span id="footer-slogan">Жақсы кітап — жақсы серік.</span><span id="footer-copyright">© 2026 Qalam кітап дүкені</span></footer>
+
+  <div class="scrim" id="scrim"></div>
+  <aside class="cart-panel" id="cart-panel" aria-label="Себет" aria-hidden="true">
+    <div class="cart-head"><div><span class="eyebrow" id="cart-eyebrow">СІЗДІҢ ТАҢДАУЫҢЫЗ</span><h2><span id="cart-title">Себет</span> <span id="panel-count">(0)</span></h2></div><button class="icon-button" id="close-cart" type="button" aria-label="Жабу">×</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-empty" id="cart-empty"><span>♡</span><strong id="empty-cart-title">Себет әзірге бос</strong><p id="empty-cart-copy">Сізге ұнаған кітаптарды осында жинаңыз.</p><button class="button button-outline" id="continue-shopping" type="button">Кітаптарды қарау</button></div>
+    <div class="cart-summary" id="cart-summary">
+      <label class="gift-option"><input type="checkbox" id="gift-wrap"><span class="checkmark"></span><span><strong id="gift-label">Сыйлыққа орау</strong><small>+500 ₸</small></span><span>✳</span></label>
+      <div class="summary-line"><span id="subtotal-label">Аралық сома</span><strong id="subtotal">0 ₸</strong></div>
+      <div class="summary-line discount-line"><span id="discount-label">10% жеңілдік</span><strong id="discount">−0 ₸</strong></div>
+      <div class="summary-line total-line"><span id="total-label">Барлығы</span><strong id="total">0 ₸</strong></div>
+      <button class="button button-dark checkout-button" id="checkout-button" type="button"><span id="checkout-label">Тапсырыс беру</span><span>↗</span></button>
+      <small class="secure-note" id="secure-note">Тапсырыс деректері тек осы демо серверде өңделеді.</small>
+    </div>
+  </aside>
+
+  <dialog class="checkout-dialog" id="checkout-dialog">
+    <button class="dialog-close icon-button" id="close-dialog" type="button" aria-label="Жабу">×</button>
+    <span class="eyebrow" id="dialog-eyebrow">СОҢҒЫ ҚАДАМ</span><h2 id="dialog-title">Тапсырысты<br><em>рәсімдеу.</em></h2>
+    <p class="dialog-intro" id="dialog-intro">Жеткізу үшін байланыс ақпаратыңызды енгізіңіз.</p>
+    <form id="checkout-form">
+      <label><span id="name-label">Атыңыз</span><input name="customer" autocomplete="name" required maxlength="80" placeholder="Мысалы, Аружан"></label>
+      <label><span id="phone-label">Телефон нөмірі</span><input name="phone" type="tel" autocomplete="tel" required maxlength="30" placeholder="+7 7__ ___ __ __"></label>
+      <label><span id="address-label">Жеткізу мекенжайы</span><textarea name="address" autocomplete="street-address" required maxlength="240" rows="2" placeholder="Қала, көше, үй нөмірі"></textarea></label>
+      <p class="form-error" id="form-error" role="alert"></p>
+      <button class="button button-dark checkout-button" type="submit"><span id="confirm-label">Тапсырысты растау</span><span>↗</span></button>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>
